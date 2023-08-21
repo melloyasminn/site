@@ -18,6 +18,7 @@
             --menuhover: #81745b;
             --fonte-titulo: 'Felipa', cursive;
             --cor-bloco: #998c7376;
+            --cor-bloco2: #cfbfa12d;
 
         }
 
@@ -110,6 +111,35 @@
             font-size: 18px;
             font-family: var(--fonte-titulo);
         }
+
+        #div {
+ 
+  background-color: var(--cor-bloco);
+  animation-name: aa;
+animation-duration: 3s;
+animation-iteration-count: infinite
+}
+
+@keyframes aa {
+  from {background-color: var(--cor-bloco);}
+  to {background-color: var(--cor-bloco2);}
+}
+
+table {
+  color: white;
+  background: var(--cor-bloco);
+  transition: transform 1s;
+  transform: translateX(0.5) scale(0.7);
+}
+
+table:hover,
+table:focus {
+  background: var(--cor-bloco2);
+  transform: translateX(8px) scale(1.2);
+  
+}
+
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,7 +159,8 @@
         </div>
 
 
-        <div>
+        <div >
+            
             <a class="menu" href="index.html"> Início</a>
             <a class="menu" href="p1.html">Guerra dos Canudos</a>
             <a class="menu" href="p2.html"> Revolta da vacina</a>
@@ -155,7 +186,7 @@
         <div></div>
 
         <div> <a href="p1.html">
-                <table>
+                <table id="div">
                     <tr style="height:55px; width: 55px;">
                         <th><img src="imagens/guerra-de-canudos.jpg" alt="" style="width: 170px; margin-left: 0%;"></th>
                         <th style="width: 300px; font-family: Arial, Helvetica, sans-serif; "> Guerra de Canudos! A
@@ -168,7 +199,7 @@
             <br>
 
             <a href="p2.html">
-                <table>
+                <table id="div">
                     <tr style="height:55px; width: 55px;">
                         <th><img src="imagens/revoltadavacina.jpg" alt="" style="width: 170px; margin-left: 0%;"></th>
                         <th style="width: 300px; font-family: Arial, Helvetica, sans-serif; "> Revolta da vacina! Foram
@@ -180,7 +211,7 @@
 
         <div>
             <aside> <a href="p3.html" >
-                    <table>
+                    <table id="div">
                         <tr style="height:55px; width: 55px;">
                             <th><img src="imagens/voto-cabresto.jpg" alt="" style="width: 220px; margin-left: 0%; margin-right: 0%;"></th></tr>
                             <tr style="height:70px; width: 70px;">  <th style="width: 700px; font-family: Arial, Helvetica, sans-serif; text-align:right;">Políticas atuais! Nossas políticas dos dias de hoje realmente são atualizadas para o tempo em que vivemos? <br> </th>
