@@ -17,16 +17,21 @@
             --cor2: #D9CAAD;
             --menuhover: #81745b;
             --fonte-titulo: 'Felipa', cursive;
+            --cor-bloco: #998c7376;
+
         }
 
+        body{
+            margin-right: 120px;
+            margin-bottom: 100px;
+        }
         p {
             font-family: Arial, Helvetica, sans-serif;
-            color: var(--corparag)
+            color: var(--corparag);
+            text-align: center;
         }
 
-        a {
-            color: var(--cor-teste1);
-        }
+
 
         h1 {
             font-family: var(--fonte-titulo);
@@ -80,11 +85,30 @@
             margin-left: 25px;
         }
 
-        menu {
+        main {
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 230px 120px 1fr 230px;
 
 
+        }
+
+        a {
+
+            color: var(--cor-teste1);
+        }
+
+        table,
+        td,
+        tr {
+            background-color: var(--cor-bloco);
+            color:var(--cor-teste1);
+            text-align: left;
+            border-radius: 10px
+        }
+
+        #p{
+            font-size: 18px;
+            font-family: var(--fonte-titulo);
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,33 +128,73 @@
             <img src="imagens/icon.png" alt="">
         </div>
 
-        <nav>
-            <div>
-                <a class="menu" href="index.html"> Início</a>
-                <a class="menu" href="p1.html">Guerra dos Canudos</a>
-                <a class="menu" href="p2.html"> Revolta da vacina</a>
-                <a class="menu" href="p3.html">Políticas atuais</a>
-                <h1 style="font-size: 59px;">Jornal da República</h1>
-            </div>
-        </nav>
+
+        <div>
+            <a class="menu" href="index.html"> Início</a>
+            <a class="menu" href="p1.html">Guerra dos Canudos</a>
+            <a class="menu" href="p2.html"> Revolta da vacina</a>
+            <a class="menu" href="p3.html">Políticas atuais</a>
+            <h1 style="font-size: 59px;">Jornal da República</h1>
+        </div>
+
         <div>
         </div>
     </header>
 
-    <menu>
+    <main>
 
 
         <div>
-            <p style="text-align: left;">Aconteceram diversos conflitos após a Proclamação da República, desde pequenos
+            <p style="text-align: left;margin-left: 50px;">Aconteceram diversos conflitos após a Proclamação da
+                República, desde pequenos
                 conflitos, até guerras. A revolta da chibata, guerra dos canudos, a revolta da vacina são as mais
                 conhecidas, e nos dias atuais, ainda existem pessoas que não tem conhecimento desses acontecimentos. Sem
                 falar das políticas atuais que na verdade são super desatualizadas!</p>
-            <p></p>
+
         </div>
-        <div> </div>
+        <div></div>
 
+        <div> <a href="p1.html">
+                <table>
+                    <tr style="height:55px; width: 55px;">
+                        <th><img src="imagens/guerra-de-canudos.jpg" alt="" style="width: 170px; margin-left: 0%;"></th>
+                        <th style="width: 300px; font-family: Arial, Helvetica, sans-serif; "> Guerra de Canudos! A
+                            guerra entre o exército brasileiro e os seguidores do beato Antônio
+                            Conselheiro.</th>
+                    </tr>
 
-    </menu>
+                </table>
+            </a>
+            <br>
+
+            <a href="p2.html">
+                <table>
+                    <tr style="height:55px; width: 55px;">
+                        <th><img src="imagens/revoltadavacina.jpg" alt="" style="width: 170px; margin-left: 0%;"></th>
+                        <th style="width: 300px; font-family: Arial, Helvetica, sans-serif; "> Revolta da vacina! Foram
+                            apenas cinco dias, mas marcaram a história da saúde pública no Brasil.</th>
+                    </tr>
+                </table>
+            </a>
+        </div>
+
+        <div>
+            <aside> <a href="p3.html" >
+                    <table>
+                        <tr style="height:55px; width: 55px;">
+                            <th><img src="imagens/voto-cabresto.jpg" alt="" style="width: 220px; margin-left: 0%; margin-right: 0%;"></th></tr>
+                            <tr style="height:70px; width: 70px;">  <th style="width: 700px; font-family: Arial, Helvetica, sans-serif; text-align:right;">Políticas atuais! Nossas políticas dos dias de hoje realmente são atualizadas para o tempo em que vivemos? <br> </th>
+                        </tr>
+                    </table>
+                </a></aside>
+        </div>
+    </main>
+ <br>
+    <footer>
+        <p id="p">
+            Sempre existiram, e existirão conflitos, mas o amor e união da nossa república superará qualquer coisa, não importa o que seja!
+        </p>
+    </footer>
 
 
 </body>

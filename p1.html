@@ -15,23 +15,25 @@
             --corh1: #aa997a;
             --cinza: rgb(190, 190, 190);
             --cor2: #D9CAAD;
-            --menuhover: #81745b
+            --menuhover: #81745b;
+            --fonte-titulo: 'Felipa', cursive;
         }
+
         p {
             font-family: Arial, Helvetica, sans-serif;
             color: var(--corparag)
         }
 
         a {
-            color:  var(--cor-teste1);
+            color: var(--cor-teste1);
         }
 
         h1 {
-            font-family: 'Felipa', cursive;
+            font-family: var(--fonte-titulo);
             color: var(--corh1);
             text-align: center;
             font-size: 20;
-            text-shadow:  10px 10px 5px var(--cinza) ;
+            text-shadow: 10px 10px 5px var(--cinza);
         }
 
         .menu {
@@ -64,12 +66,12 @@
             margin-top: 45px;
         }
 
-       
+
 
         header {
             display: grid;
-            grid-template-columns: 200px 1fr 150px;
-            
+            grid-template-columns: 150px 1fr 150px;
+
         }
 
         img {
@@ -78,13 +80,12 @@
             margin-left: 25px;
         }
 
-        menu{
+        menu {
             display: grid;
-            grid-template-columns: 200px  1fr;
-          
-            
+            grid-template-columns: 200px 1fr;
+
+
         }
-    
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,33 +96,40 @@
 
 <body style="background-image: url(imagens/o-fundo-de-papel-amassado_1373-412.avif);background-size: cover;">
 
+
+
     <header>
-        
+
         <div>
             <img src="imagens/icon.png" alt="">
         </div>
 
-        <div>
-            <a class="menu" href="index.html"> Início</a>
-            <a class="menu" href="p1.html">Guerra dos Canudos</a>
-            <a class="menu" href="p2.html"> Revolta da vacina</a>
-            <a class="menu" href="p3.html">Políticas atuais</a>
-            <h1 style="font-size: 59px;">Guerra dos Canudos</h1>
-        </div>
-
+   
+            <div>
+                <a class="menu" href="index.html"> Início</a>
+                <a class="menu" href="p1.html">Guerra dos Canudos</a>
+                <a class="menu" href="p2.html"> Revolta da vacina</a>
+                <a class="menu" href="p3.html">Políticas atuais</a>
+                <h1 style="font-size: 59px;">Guerra dos Canudos</h1>
+            </div>
         <div>
         </div>
     </header>
 
-<menu>
-    
-   
-    <div><p style="text-align: left;">Aconteceram diversos conflitos após a Proclamação da República, desde pequenos conflitos, até guerras. A revolta da chibata, guerra dos canudos, a revolta da vacina são as mais conhecidas, e nos dias atuais, ainda existem pessoas que não tem conhecimento desses acontecimentos. </p>
-    <p></p> </div>
- <div>       </div>
+    <menu>
 
-    
-</menu>
+
+        <div>
+            <p style="text-align: left;">Aconteceram diversos conflitos após a Proclamação da República, desde pequenos
+                conflitos, até guerras. A revolta da chibata, guerra dos canudos, a revolta da vacina são as mais
+                conhecidas, e nos dias atuais, ainda existem pessoas que não tem conhecimento desses acontecimentos. Sem
+                falar das políticas atuais que na verdade são super desatualizadas!</p>
+            <p></p>
+        </div>
+        <div> </div>
+
+
+    </menu>
 
 
 </body>
