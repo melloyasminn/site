@@ -18,14 +18,15 @@
             --menuhover: #81745b;
             --fonte-titulo: 'Felipa', cursive;
             --cor-bloco: #998c7376;
-            --cor-bloco2: #cfbfa12d;
+            --cor-bloco2: #cfbfa111;
 
         }
 
-        body{
+        body {
             margin-right: 120px;
             margin-bottom: 100px;
         }
+
         p {
             font-family: Arial, Helvetica, sans-serif;
             color: var(--corparag);
@@ -102,44 +103,47 @@
         td,
         tr {
             background-color: var(--cor-bloco);
-            color:var(--cor-teste1);
+            color: var(--cor-teste1);
             text-align: left;
             border-radius: 10px
         }
 
-        #p{
+        #p {
             font-size: 18px;
             font-family: var(--fonte-titulo);
         }
 
         #div {
- 
-  background-color: var(--cor-bloco);
-  animation-name: aa;
-animation-duration: 3s;
-animation-iteration-count: infinite
-}
 
-@keyframes aa {
-  from {background-color: var(--cor-bloco);}
-  to {background-color: var(--cor-bloco2);}
-}
+            background-color: var(--cor-bloco);
+            animation-name: aa;
+            animation-duration: 3s;
+            animation-iteration-count: infinite
+        }
 
-table {
-  color: white;
-  background: var(--cor-bloco);
-  transition: transform 1s;
-  transform: translateX(0.5) scale(0.7);
-}
+        @keyframes aa {
+            from {
+                background-color: var(--cor-bloco);
+            }
 
-table:hover,
-table:focus {
-  background: var(--cor-bloco2);
-  transform: translateX(8px) scale(1.2);
-  
-}
+            to {
+                background-color: var(--cor-bloco2);
+            }
+        }
 
+        table {
+            color: white;
+            background: var(--cor-bloco);
+            transition: transform 1s;
+            transform: translateX(0.5) scale(0.7);
+        }
 
+        table:hover,
+        table:focus {
+            background: var(--cor-bloco2);
+            transform: translateX(8px) scale(1.2);
+
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,13 +163,14 @@ table:focus {
         </div>
 
 
-        <div >
-            
-            <a class="menu" href="index.html"> Início</a>
-            <a class="menu" href="p1.html">Guerra dos Canudos</a>
-            <a class="menu" href="p2.html"> Revolta da vacina</a>
-            <a class="menu" href="p3.html">Políticas atuais</a>
-            <h1 style="font-size: 59px;">Jornal da República</h1>
+        <div>
+            <nav>
+                <a class="menu" href="index.html"> Início</a>
+                <a class="menu" href="p1.html">Guerra dos Canudos</a>
+                <a class="menu" href="p2.html"> Revolta da vacina</a>
+                <a class="menu" href="p3.html">Políticas atuais</a>
+                <h1 style="font-size: 59px;">Jornal da República</h1>
+            </nav>
         </div>
 
         <div>
@@ -210,20 +215,26 @@ table:focus {
         </div>
 
         <div>
-            <aside> <a href="p3.html" >
+            <aside> <a href="p3.html">
                     <table id="div">
                         <tr style="height:55px; width: 55px;">
-                            <th><img src="imagens/voto-cabresto.jpg" alt="" style="width: 220px; margin-left: 0%; margin-right: 0%;"></th></tr>
-                            <tr style="height:70px; width: 70px;">  <th style="width: 700px; font-family: Arial, Helvetica, sans-serif; text-align:right;">Políticas atuais! Nossas políticas dos dias de hoje realmente são atualizadas para o tempo em que vivemos? <br> </th>
+                            <th><img src="imagens/voto-cabresto.jpg" alt=""
+                                    style="width: 220px; margin-left: 0%; margin-right: 0%;"></th>
+                        </tr>
+                        <tr style="height:70px; width: 70px;">
+                            <th style="width: 700px; font-family: Arial, Helvetica, sans-serif; text-align:right;">
+                                Políticas atuais! Nossas políticas dos dias de hoje realmente são atualizadas para o
+                                tempo em que vivemos? <br> </th>
                         </tr>
                     </table>
                 </a></aside>
         </div>
     </main>
- <br>
+    <br>
     <footer>
         <p id="p">
-            Sempre existiram, e existirão conflitos, mas o amor e união da nossa república superará qualquer coisa, não importa o que seja!
+            Sempre existiram, e existirão conflitos, mas o amor e união da nossa república superará qualquer coisa, não
+            importa o que seja!
         </p>
     </footer>
 
