@@ -8,6 +8,11 @@
     <title>Jornal</title>
 
     <style>
+        body {
+            margin-right: 200px;
+            margin-bottom: 100px;
+        }
+
         :root {
             --cor-teste1: rgb(255, 255, 255);
             --cor1: #998c73;
@@ -17,11 +22,15 @@
             --cor2: #D9CAAD;
             --menuhover: #81745b;
             --fonte-titulo: 'Felipa', cursive;
+            --fontp:Arial, Helvetica, sans-serif;
         }
 
         p {
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--corparag)
+            font-family: var(--fontp);
+            color: var(--corparag);
+            font-size: 18px;
+            margin: 0;
+
         }
 
         a {
@@ -82,9 +91,15 @@
 
         menu {
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 330px 1fr 700px;
 
 
+
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 50% 25% 1fr;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,22 +112,21 @@
 <body style="background-image: url(imagens/o-fundo-de-papel-amassado_1373-412.avif);background-size: cover;">
 
 
-
     <header>
-
         <div>
             <img src="imagens/icon.png" alt="">
         </div>
 
-        <nav>
-            <div>
-                <a class="menu" href="index.html"> Início</a>
+
+        <div>
+            <nav> <a class="menu" href="index.html"> Início</a>
                 <a class="menu" href="p1.html">Guerra dos Canudos</a>
                 <a class="menu" href="p2.html"> Revolta da vacina</a>
                 <a class="menu" href="p3.html">Políticas atuais</a>
                 <h1 style="font-size: 59px;">Revolta da vacina</h1>
-            </div>
-        </nav>
+            </nav>
+
+        </div>
         <div>
         </div>
     </header>
@@ -121,17 +135,58 @@
 
 
         <div>
-            <p style="text-align: left;">Aconteceram diversos conflitos após a Proclamação da República, desde pequenos
-                conflitos, até guerras. A revolta da chibata, guerra dos canudos, a revolta da vacina são as mais
-                conhecidas, e nos dias atuais, ainda existem pessoas que não tem conhecimento desses acontecimentos. Sem
-                falar das políticas atuais que na verdade são super desatualizadas!</p>
-            <p></p>
+            <article>
+                <img src="imagens/5_vacina.jpg" alt=""
+                    style="width:  227px; height:  324px; border: var(--cor1) 4px dotted;">
+            </article>
         </div>
-        <div> </div>
+        <div>
+            <main>
+                <p style="  text-indent: 50px;text-align: left;">Foram apenas cinco dias, mas marcaram a história da saúde pública no Brasil. No início de novembro de 1904, o Rio de Janeiro, então capital federal, foi palco da maior revolta urbana que já tinha sido vista na <strong>A Revolta da Vacina </strong> deixou um saldo de 945 prisões, 110 feridos e 30 mortos, segundo o Centro Cultural do Ministério da Saúde. O estopim da rebelião popular foi uma lei que determinava a obrigatoriedade de vacinação contra a varíola. Mas havia um complexo e polêmico panorama social e político por trás da revolta, e diferentes fatores ajudam a explicar melhor os protestos.
+
+                    
+                </p>
+                <p style="  text-indent: 50px;text-align: left;">Dados do Instituto Oswaldo Cruz mostram que, naquele ano, uma epidemia de varíola atingiu a capital. O Rio de Janeiro, aliás, sofria com várias outras doenças (como peste bubônica, tuberculose e febre amarela) e era conhecido no exterior pelo nada elogioso apelido de “túmulo dos estrangeiros”. Só em 1904, cerca de 3.500 pessoas morreram na cidade vítimas da varíola, e chegava a 1.800 o número de internações pela enfermidade apenas em um dos hospitais cariocas, o Hospital São Sebastião.
 
 
+                </p>
+
+                <p style="  text-indent: 50px;text-align: left;">A vacina antivariólica já havia sido desenvolvida em 1796, pelo médico Edward Jenner, na Inglaterra. No Rio de Janeiro, a vacinação da doença era obrigatória para crianças desde 1837 e para adultos desde 1846, conforme o Código de Posturas do Município. No entanto, a regra não era cumprida porque a produção de vacinas era pequena, tendo alcançado escala comercial apenas em 1884. O imunizante também não era bem aceito pelo povo, ainda desacostumado com a própria ideia da vacinação, e diferentes boatos corriam na época, como o de quem se vacinava ganhava feições bovinas.
+
+                </p>
+            </main>
+
+        </div>
+
+        <div>
+            <aside> <img src="imagens/vacina.jpg" alt=""
+                    style="height: 300px ;width:600px;border: var(--cor1) 4px dotted;"></aside>
+
+        </div>
     </menu>
 
+    <section>
+        <div>
+            <p style="margin-left: 25px; text-align: left;">"A população não aceitava ter a casa invadida para ser vacinado e havia uma forte discussão sobre o direito de o Estado mandar no corpo dos cidadãos. A mesma questão que voltou à tona recentemente, com vacinação contra a covid-19”, lembra Fidelis da Ponte. “Não foi apenas uma questão de ignorância da população, motivada pelos boatos. Figuras como Ruy Barbosa, um intelectual, fizeram discursos inflamados contra a obrigatoriedade da vacina. É importante entender a novidade que a vacinação representava e os muitos fatores relacionados à revolta”, completa.
+                Embora os protestos tenham começado pela vacinação, logo se dirigiu aos serviços públicos em geral e ao governo. A Revolta da Vacina durou cinco dias, e nas ruas da capital, bondes foram atacados, virados e queimados. 
+            </p>
+        </div>
+
+        <div>
+            <p style="margin-left: 25px;text-align: left;">
+                O resultado foi que no ano de 1908, uma nova e intensa epidemia de varíola voltou a atingir o Rio de Janeiro, com mais de 6.500 casos, segundo dados da Casa de Oswaldo Cruz. Foi só então que a população começou a procurar voluntariamente os postos de saúde para se vacinar. Muito esforço seria necessário, ainda, para que o Brasil finalmente conseguisse erradicar a varíola em 1971.
+
+
+
+            </p>
+        </div>
+
+
+        <div>
+            <img src="imagens/revolta.avif" alt=""
+                style="width:  317px; height:  222px; border: var(--cor1) 4px dotted;margin-left: 30px;">
+        </div>
+    </section>
 
 </body>
 

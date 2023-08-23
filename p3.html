@@ -8,6 +8,11 @@
     <title>Jornal</title>
 
     <style>
+        body {
+            margin-right: 200px;
+            margin-bottom: 100px;
+        }
+
         :root {
             --cor-teste1: rgb(255, 255, 255);
             --cor1: #998c73;
@@ -17,11 +22,15 @@
             --cor2: #D9CAAD;
             --menuhover: #81745b;
             --fonte-titulo: 'Felipa', cursive;
+            --fontp: Arial, Helvetica, sans-serif;;
         }
 
         p {
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--corparag)
+            font-family: var(--fontp);
+            color: var(--corparag);
+            font-size: 18px;
+            margin: 0;
+
         }
 
         a {
@@ -82,9 +91,15 @@
 
         menu {
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 330px 1fr 700px;
 
 
+
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 50% 25% 1fr;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,22 +112,22 @@
 <body style="background-image: url(imagens/o-fundo-de-papel-amassado_1373-412.avif);background-size: cover;">
 
 
-
     <header>
-
         <div>
             <img src="imagens/icon.png" alt="">
         </div>
 
-        <nav>
-            <div>
-                <a class="menu" href="index.html"> Início</a>
+
+        <div>
+            <nav> <a class="menu" href="index.html"> Início</a>
                 <a class="menu" href="p1.html">Guerra dos Canudos</a>
                 <a class="menu" href="p2.html"> Revolta da vacina</a>
                 <a class="menu" href="p3.html">Políticas atuais</a>
-                <h1 style="font-size: 59px;">Políticas atuais</h1>
-            </div>
-        </nav>
+                <h1 style="font-size: 59px;">
+                  Políticas atuais</h1>
+            </nav>
+
+        </div>
         <div>
         </div>
     </header>
@@ -121,17 +136,63 @@
 
 
         <div>
-            <p style="text-align: left;">Aconteceram diversos conflitos após a Proclamação da República, desde pequenos
-                conflitos, até guerras. A revolta da chibata, guerra dos canudos, a revolta da vacina são as mais
-                conhecidas, e nos dias atuais, ainda existem pessoas que não tem conhecimento desses acontecimentos. Sem
-                falar das políticas atuais que na verdade são super desatualizadas!</p>
-            <p></p>
+            <article>
+                <img src="imagens/cafe.webp" alt=""
+                    style="width:  227px; height:  324px; border: var(--cor1) 4px dotted;">
+            </article>
         </div>
-        <div> </div>
+        <div>
+            <main>
+                <p style="  text-indent: 50px;text-align: left;">A <strong>Política do Café com Leite</strong> é uma expressão utilizada para caracterizar um procedimento político típico de um período da história do Brasil denominado de República Oligárquica (1898 a 1930). Esse procedimento consistia na alternância no cargo de Presidente da República entre as oligarquias dos dois estados mais poderosos da época, o estado de São Paulo e o estado de Minas Gerais. Para compreendermos como esse procedimento foi viável, é necessário que saibamos o efeito que teve a opção do Brasil pelo sistema federativo naquela época.
 
+                </p>
+                <p style="  text-indent: 50px;text-align: left;">Os dois estados que mais se beneficiaram com o sistema federativo foram São Paulo e Minas Gerais (atrás deles estavam Bahia, Rio Grande do Sul e Pernambuco). As características econômicas desses dois estados, isto é, a produção de café, em São Paulo, e a de leite, em Minas, serviram de mote para a designação de “Política do Café com Leite”. Isso porque o cargo de presidente da República passou a ser ocupado, na maior parte das vezes, por algum representante dos oligarcas de um desses dois estados.
 
+               
+                </p>
+
+                <p style="  text-indent: 50px;text-align: left;">Desde os tempos do Império a aristocracia cafeeira dominava a vida política do país, de modo a defender seus interesses econômicos.
+
+                  Durante os primeiros governos republicanos, os cafeicultores que não participaram diretamente do golpe militar que proclamou a República foram descriminados.</p>
+
+                <p style="  text-indent: 50px;text-align: left;">Com isso, a influência política dos produtores de café só voltou a ser significativa a partir do terceiro governo republicano, quando Prudente de Moraes o primeiro presidente civil, assumiu a Presidência.</p>
+            </main>
+
+        </div>
+
+        <div>
+            <aside> <img src="imagens/politica.jpeg" alt=""
+                    style="height: 300px ;width:600px;border: var(--cor1) 4px dotted;"></aside>
+
+        </div>
     </menu>
 
+    <section>
+        <div>
+            <p style="margin-left: 25px; text-align: left;"><strong>Voto de cabresto</strong> é uma expressão dada pela superposição de duas palavras. Assim, temos Voto, que é o exercício pleno da democracia; e a palavra Cabresto, do latim capistrum, que significa "mordaça ou freio".
+
+              Dessa maneira, temos um conceito quase paradoxal, na medida em que representa a democracia amordaçada e guiada como um animal de carga.
+              
+              
+        </div>
+
+        <div>
+            <p style="margin-left: 25px;text-align: left;">
+              Nesse caso, o eleitor só necessitava entregar pessoalmente um pedaço de papel com o nome do seu candidato.
+
+              Note que ele poderia ser escrito pelo próprio coronel, já que a maioria desses eleitores nem mesmo sabia ler, e depositá-lo numa urna, num saco de pano.
+              
+              É notável, nesse contexto, a troca de favores que constituiu o sistema de "voto em aberto", o qual ficara então conhecido como "voto de cabresto",
+
+            </p>
+        </div>
+
+
+        <div>
+            <img src="imagens/republica-velha-54s.jpg" alt=""
+                style="width:  317px; height:  222px; border: var(--cor1) 4px dotted;margin-left: 30px;">
+        </div>
+    </section>
 
 </body>
 

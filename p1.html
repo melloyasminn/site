@@ -8,6 +8,11 @@
     <title>Jornal</title>
 
     <style>
+        body {
+            margin-right: 200px;
+            margin-bottom: 100px;
+        }
+
         :root {
             --cor-teste1: rgb(255, 255, 255);
             --cor1: #998c73;
@@ -17,11 +22,15 @@
             --cor2: #D9CAAD;
             --menuhover: #81745b;
             --fonte-titulo: 'Felipa', cursive;
+            --fontp:  Arial, Helvetica, sans-serif;
         }
 
         p {
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--corparag)
+            font-family:var(--fontp);
+            color: var(--corparag);
+            font-size: 18px;
+            margin: 0;
+
         }
 
         a {
@@ -85,6 +94,12 @@
             grid-template-columns: 330px 1fr 700px;
 
 
+
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 50% 25% 1fr;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,11 +119,13 @@
 
 
         <div>
-            <a class="menu" href="index.html"> Início</a>
-            <a class="menu" href="p1.html">Guerra dos Canudos</a>
-            <a class="menu" href="p2.html"> Revolta da vacina</a>
-            <a class="menu" href="p3.html">Políticas atuais</a>
-            <h1 style="font-size: 59px;">Guerra dos Canudos</h1>
+            <nav> <a class="menu" href="index.html"> Início</a>
+                <a class="menu" href="p1.html">Guerra dos Canudos</a>
+                <a class="menu" href="p2.html"> Revolta da vacina</a>
+                <a class="menu" href="p3.html">Políticas atuais</a>
+                <h1 style="font-size: 59px;">Guerra dos Canudos</h1>
+            </nav>
+
         </div>
         <div>
         </div>
@@ -118,30 +135,95 @@
 
 
         <div>
-            <img src="imagens/igreja-canudos.jpg" alt=""
-                style="width:  227px; height:  324px; border: var(--cor1) 4px dotted;">
+            <article>
+                <img src="imagens/igreja-canudos.jpg" alt=""
+                    style="width:  227px; height:  324px; border: var(--cor1) 4px dotted;">
+            </article>
         </div>
         <div>
-            <p style="  text-indent: 50px;text-align: left;">A Guerra de Canudos foi um dos principais conflitos que
-                marcaram o período entre a queda da monarquia e a instalação do regime republicano no Brasil. Aconteceu
-                de novembro de 1896 a outubro de 1897 no sertão da Bahia, em uma fazenda improdutiva ocupada por Antônio
-                Conselheiro e seus mais de 20 mil seguidores.
+            <main>
+                <p style="  text-indent: 50px;text-align: left;">A <strong>Guerra de Canudos</strong> foi um dos
+                    principais conflitos que
+                    marcaram o período entre a queda da monarquia e a instalação do regime republicano no Brasil.
+                    Aconteceu
+                    de novembro de 1896 a outubro de 1897 no sertão da Bahia, em uma fazenda improdutiva ocupada por
+                    Antônio
+                    Conselheiro e seus mais de 20 mil seguidores.
 
-            </p>
-            <p style="  text-indent: 50px;text-align: left;">Teve caráter messiânico, por conta das pregações do beato,
-                mas envolvia a luta contra a fome, a miséria e a seca nordestina, região desassistida pelo governo
-                federal, que passava, naquele momento, pela transição da monarquia para a república.
+                </p>
+                <p style="  text-indent: 50px;text-align: left;">Teve caráter messiânico, por conta das pregações do
+                    beato,
+                    mas envolvia a luta contra a fome, a miséria e a seca nordestina, região desassistida pelo governo
+                    federal, que passava, naquele momento, pela transição da monarquia para a república.
 
-            </p>
+                </p>
 
-            <p style="  text-indent: 50px;text-align: left;">As causas da Guerra de Canudos foram: por parte da Igreja, a perseguição de Antônio Conselheiro, o beato que fazia com que ela perdesse fiéis; por parte dos latifundiários, tentar dar um fim à ocupação de terras e lutas pelo fim da miséria no Nordeste; para o governo baiano, a pressão dos dois últimos setores; e para o governo federal, um impedimento de crise à implementação da República, que estava em curso.</p>
+                <p style="  text-indent: 50px;text-align: left;">As causas da Guerra de Canudos foram: por parte da
+                    Igreja, a perseguição de Antônio Conselheiro, o beato que fazia com que ela perdesse fiéis; por
+                    parte dos latifundiários, tentar dar um fim à ocupação de terras e lutas pelo fim da miséria no
+                    Nordeste; para o governo baiano, a pressão dos dois últimos setores; e para o governo federal, um
+                    impedimento de crise à implementação da República, que estava em curso.</p>
 
-            <p style="  text-indent: 50px;text-align: left;">A destruição de Canudos aconteceu depois de quatro tentativas: duas do governo da Bahia junto à Igreja e aos coronéis; outra pelo exército brasileiro, que não obteve êxito por não saber lidar com as peculiaridades da região; e a quarta e última, quando, tendo sido chamado de fraco na capital, Prudente de Morais decidiu enviar 5 mil homens altamente munidos, além de canhões para o Nordeste, até então desassistido.</p>
+                <p style="  text-indent: 50px;text-align: left;">A destruição de Canudos aconteceu depois de quatro
+                    tentativas: duas do governo da Bahia junto à Igreja e aos coronéis; outra pelo exército brasileiro,
+                    que não obteve êxito por não saber lidar com as peculiaridades da região; e a quarta e última,
+                    quando, tendo sido chamado de fraco na capital, Prudente de Morais decidiu enviar 5 mil homens
+                    altamente munidos, além de canhões para o Nordeste, até então desassistido.</p>
+            </main>
+
         </div>
 
+        <div>
+            <aside> <img src="imagens/guerra-dos-canudos.webp" alt=""
+                    style="height: 300px ;width:600px;border: var(--cor1) 4px dotted;"></aside>
+
+        </div>
     </menu>
 
+    <section>
+        <div>
+            <p style="margin-left: 25px; text-align: left;">Para os sertanejos, o arraial era a “terra prometida”.
+                Porém, para os padres que perdiam fiéis, e os proprietários de terra que perdiam seus trabalhadores, era
+                um “reduto de fanáticos” que devia ser eliminado.
 
+                Padres e coronéis pressionaram o governador da Bahia para destruir o Arraial. Este enviou duas
+                expedições militares que foram vencidas pelos homens de Conselheiro.
+
+                O vice-presidente Manuel Vitorino, que ocupava a presidência como substituto de Prudente de Moraes,
+                enviou a terceira expedição, comandada pelo coronel Moreira César.
+
+                Para o governo era uma questão de honra militar e nacional aniquilar os “fanáticos”. Contudo, essa
+                expedição foi derrotada e Moreira César morto em combate.
+
+                As sucessivas derrotas militares se explicavam pelo fato da grande maioria dos soldados desconhecerem a
+                região da caatinga, tão familiar ao povo de Canudos.
+
+                Além disso, os homens do Conselheiro lutavam pela sobrevivência e pela salvação da alma, acreditando que
+                travavam uma guerra santa.</p>
+        </div>
+
+        <div>
+            <p style="margin-left: 25px;text-align: left;">
+                Para o governo era uma questão de honra militar e nacional aniquilar os “fanáticos”. Contudo, essa
+                expedição foi derrotada e Moreira César morto em combate.
+
+                As sucessivas derrotas militares se explicavam pelo fato da grande maioria dos soldados desconhecerem a
+                região da caatinga, tão familiar ao povo de Canudos.
+
+                Além disso, os homens do Conselheiro lutavam pela sobrevivência e pela salvação da alma, acreditando que
+                travavam uma guerra santa.
+
+            </p>
+        </div>
+
+
+        <div>
+            <img src="imagens/canudos.jpeg" alt=""
+                style="width:  317px; height:  222px; border: var(--cor1) 4px dotted;margin-left: 30px;">
+        </div>
+    </section>
+
+    <footer></footer>
 </body>
 
 </html>
